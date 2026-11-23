@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Conecta el Wi-Fi RTL8723DE al arrancar con el SSID y la PMK de /etc/rtl8723de.conf. -->
+<plist version="1.0">
+<dict>
+	<key>Label</key><string>local.rtl8723de.autoconnect</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/local/bin/rtlctl</string>
+		<string>autoconnect</string>
+	</array>
+	<key>RunAtLoad</key><true/>
+	<key>StandardErrorPath</key><string>/var/log/rtl8723de-autoconnect.log</string>
+	<key>StandardOutPath</key><string>/var/log/rtl8723de-autoconnect.log</string>
+</dict>
+</plist>
